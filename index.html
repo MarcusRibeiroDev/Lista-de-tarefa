@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/reset.css" type="text/css">
+    <title>Task List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+        <main id="container--main">
+            <section id="add--section">
+                <form action="#" id="main--form">
+                    <input type="text" name="NewTask" id="add--input" placeholder="Type here..."> <!--Max 24-->
+                    <button id="add--button">Add</button>
+                </form>
+            </section>
+            <section id='tasks--section'>
+                <span style="display: none;">Add some task!</span>
+                <ul id="tasks--list">
+                    <li class="tasks">
+                        <button class="button--default">
+                            <div class="done"></div>
+                        </button>
+                        <span class="description--task">xxxxxxxxxxxxxxxxxxxxxxxx</span>
+                        <div class="button--options">
+                            <button class="button--default edit">
+                                <!-- <div class="edit--task">
+                                    <input type="text" id="edit--save--task">
+                                    <div class="button--edit--options">
+                                        <div class="button--edit--default save">S</div>
+                                        <div class="button--edit--default cancel">C</div>
+                                    </div>
+                                </div> -->
+                            </button>
+                            <button class="button--default delete">D</button>
+                        </div>
+                    </li>        
+                    <li class="tasks">
+                        <button class="button--default">
+                            <div class="done"></div>
+                        </button>
+                        <span class="description--task">xxxxxxxxxxxxxxxxxxxxxxxx</span>
+                        <div class="button--options">
+                            <button class="button--default edit">
+                                <!-- <div class="edit--task">
+                                    <input type="text" id="edit--save--task">
+                                    <div class="button--edit--options">
+                                        <div class="button--edit--default save">S</div>
+                                        <div class="button--edit--default cancel">C</div>
+                                    </div>
+                                </div> -->
+                            </button>
+                            <button class="button--default delete">D</button>
+                        </div>
+                    </li>        
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
