@@ -67,8 +67,8 @@ html{
 }
 
 .done{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
     background-color: rgb(0, 0, 0);
 }
 
@@ -95,6 +95,7 @@ html{
    background-color: rgb(32, 32, 32);
    padding: 1rem;
    min-width: 36rem;
+   display: none;
 }
 
 .button--edit--options{
@@ -113,4 +114,11 @@ html{
     background-color: rgb(203, 205, 207);
 }
 
+.vanish{
+    display: none;
+}
+
+.display_default{
+    display: block;
+}
 
