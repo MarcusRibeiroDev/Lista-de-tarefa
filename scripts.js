@@ -178,7 +178,7 @@ function activateFunction(e){
         },
 
         delete: function(){
-            taskStorage.splice(currentLiIndex,(currentLiIndex+1)) // também é possivel usar splice
+            taskStorage.splice(currentLiIndex,1) // também é possivel usar splice
             renderTask()
             setSavedData()
         },
