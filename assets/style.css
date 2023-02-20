@@ -15,6 +15,7 @@ html{
 
 body{
     background-image: url('./images/background.jpg');
+    background-position: center;
     background-size:cover;
 }
 
@@ -98,7 +99,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(150, 26, 159, 0.612);
+    background-color: rgba(150, 26, 159, 0.3);
     height: 6rem;
     width: 100%;
     border-top-right-radius: 3rem;
@@ -111,7 +112,7 @@ h1{
     align-items: center;
     min-height: 10rem;
     width: 44rem;
-    background-color: #de79dbb3;
+    background-color: rgba(222, 121, 219, 0.5);
     border-bottom-right-radius: 3rem;
     border-bottom-left-radius: 0.5rem;
 }
@@ -171,7 +172,7 @@ h1{
    top: 4rem;
    right: 8rem;
    height: 4rem;
-   background-color: rgb(32, 32, 32);
+   background-color: rgba(255, 0, 0, 0.800);
    padding: 1rem;
    min-width: 36rem;
    display: none;
@@ -217,4 +218,14 @@ h1{
     font-size: 2.8rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.700);
+}
+
+.save{
+    background-image: url('images/save.png');
+    background-size:cover;
+}
+
+.cancel{
+    background-image: url('images/disabled.png');
+    background-size:cover;
 }
