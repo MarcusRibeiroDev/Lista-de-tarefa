@@ -8,6 +8,16 @@ const taskList = document.querySelector('#tasks--list')
 let message = document.querySelector('#message')
 const lis = taskList.getElementsByTagName('li')
 
+
+// Alert caso o usuário digite mais de 24 caracteris
+
+inputTask.addEventListener('input', function validateInputMain(){
+    if(inputTask.value.length === 20){
+        alert('Não é permitido exceder o limite de 20 caracteres')
+        inputTask.value = ''
+    }
+})
+
 let taskStorage = getSavedData()
 
 function getSavedData(){
@@ -152,6 +162,15 @@ function activateFunction(e){
 
     let currentLiIndex = Array.from(lis).indexOf(currentLi)
 
+    let inputEdit = currentLi.querySelector('.edit--save--task')
+
+    inputEdit.addEventListener('input', function(){
+        if(inputEdit.value.length === 20){
+            alert('Não é permitido exceder o limite de 20 caracteres')
+            inputEdit.value = ''
+        }
+    })
+
     const eventsInside = {
 
         check: function(){
@@ -178,7 +197,7 @@ function activateFunction(e){
         },
 
         delete: function(){
-            taskStorage.splice(currentLiIndex,1) // também é possivel usar splice
+            taskStorage.splice(currentLiIndex,1)
             renderTask()
             setSavedData()
         },
