@@ -9,7 +9,7 @@ let message = document.querySelector('#message')
 const lis = taskList.getElementsByTagName('li')
 
 
-// Alert caso o usuário digite mais de 24 caracteris
+// Alert caso o usuário digite mais de 24 caracteres
 
 inputTask.addEventListener('input', function validateInputMain(){
     if(inputTask.value.length === 20){
